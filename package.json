@@ -31,7 +31,9 @@
   },
   "scripts": {
     "start": "watchify -s toMarkdown -o dist/to-markdown.js index.js -v",
-    "test": "standard index.js lib/**/*.js test/**/*.js && qunit -c ./index.js -t ./test/to-markdown-test.js ./test/gfm-test.js"
+    "start1": "watchify -s toMarkdown -o dist/to-markdown.js convert.js -v",
+    "test": "standard index.js lib/**/*.js test/**/*.js && qunit -c ./index.js -t ./test/to-markdown-test.js ./test/gfm-test.js",
+    "test1": "standard index.js lib/**/*.js test/**/*.js && qunit -c ./convert.js -t ./test/to-markdown-test.js ./test/gfm-test.js"
   },
   "url": "http://domchristie.github.com/to-markdown/"
 }

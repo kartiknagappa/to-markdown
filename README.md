@@ -2,6 +2,11 @@
 
 An HTML to Markdown converter written in JavaScript.
 
+The command-line version is as follows:
+```sh
+$ node convert <html file>
+```
+
 The API is as follows:
 
 ```js

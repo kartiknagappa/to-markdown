@@ -233,7 +233,7 @@ toMarkdown.outer = outer
 
 module.exports = toMarkdown
 
-},{"./lib/gfm-converters":2,"./lib/html-parser":3,"./lib/md-converters":4,"collapse-whitespace":7}],2:[function(require,module,exports){
+},{"./lib/gfm-converters":2,"./lib/html-parser":3,"./lib/md-converters":4,"collapse-whitespace":6}],2:[function(require,module,exports){
 'use strict'
 
 function cell (content, node) {
@@ -423,7 +423,7 @@ function shouldUseActiveX () {
 
 module.exports = canParseHtmlNatively() ? _window.DOMParser : createHtmlParser()
 
-},{"jsdom":6}],4:[function(require,module,exports){
+},{"jsdom":8}],4:[function(require,module,exports){
 'use strict'
 
 module.exports = [
@@ -586,12 +586,12 @@ module.exports = [
   "address",
   "article",
   "aside",
-  "audio",
   "blockquote",
   "canvas",
   "dd",
   "div",
   "dl",
+  "dt",
   "fieldset",
   "figcaption",
   "figure",
@@ -606,6 +606,7 @@ module.exports = [
   "header",
   "hgroup",
   "hr",
+  "li",
   "main",
   "nav",
   "noscript",
@@ -621,8 +622,6 @@ module.exports = [
 ];
 
 },{}],6:[function(require,module,exports){
-
-},{}],7:[function(require,module,exports){
 'use strict';
 
 var voidElements = require('void-elements');
@@ -760,7 +759,7 @@ function next(prev, current) {
 
 module.exports = collapseWhitespace;
 
-},{"block-elements":5,"void-elements":8}],8:[function(require,module,exports){
+},{"block-elements":5,"void-elements":7}],7:[function(require,module,exports){
 /**
  * This file automatically generated from `pre-publish.js`.
  * Do not manually edit.
@@ -784,6 +783,8 @@ module.exports = {
   "track": true,
   "wbr": true
 };
+
+},{}],8:[function(require,module,exports){
 
 },{}]},{},[1])(1)
 });
